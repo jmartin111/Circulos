@@ -1,0 +1,6 @@
+<drawables>
+    <bitmap id="LauncherIcon" filename="launcher_icon.png" />
+    <drawable-list id="circle_face">
+    	<shape type="circle" x="center" y="center" radius="30" color="Gfx.COLOR_RED" />
+    </drawable-list>
+</drawables>
