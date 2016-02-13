@@ -5,46 +5,50 @@
 <entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="33" pc="268435479" symbol="onLayout"/>
 <entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="45" pc="268435522" symbol="onUpdate"/>
 <entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="46" pc="268435539" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="47" pc="268435613" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="49" pc="268435637" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="50" pc="268435656" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="51" pc="268435675" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="52" pc="268435697" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="55" pc="268435719" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="58" pc="268435739" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="59" pc="268435775" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="62" pc="268435823" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="63" pc="268435859" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="64" pc="268435889" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="65" pc="268435919" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="69" pc="268435965" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="70" pc="268435975" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="71" pc="268435986" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="74" pc="268435996" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="75" pc="268436007" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="79" pc="268436020" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="82" pc="268436050" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="83" pc="268436086" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="89" pc="268436122" symbol="calcCircleCoord"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="90" pc="268436130" symbol="calcCircleCoord"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="91" pc="268436170" symbol="calcCircleCoord"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="92" pc="268436210" symbol="calcCircleCoord"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosApp.mc" lineNum="6" pc="268436225" symbol="initialize"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosApp.mc" lineNum="19" pc="268436252" symbol="getInitialView"/>
-<entry filename="Rez" lineNum="17" pc="268436292" symbol="initialize"/>
-<entry filename="Rez" lineNum="21" pc="268436319" symbol="draw"/>
-<entry filename="Rez" lineNum="22" pc="268436326" symbol="draw"/>
-<entry filename="Rez" lineNum="23" pc="268436333" symbol="draw"/>
-<entry filename="Rez" lineNum="24" pc="268436346" symbol="draw"/>
-<entry filename="Rez" lineNum="25" pc="268436359" symbol="draw"/>
-<entry filename="Rez" lineNum="30" pc="268436384" symbol="drawComplex"/>
-<entry filename="Rez" lineNum="31" pc="268436420" symbol="drawComplex"/>
-<entry filename="Rez" lineNum="45" pc="268436504" symbol="WatchFace"/>
-<entry filename="Rez" lineNum="46" pc="268436518" symbol="WatchFace"/>
-<entry filename="Rez" lineNum="47" pc="268436615" symbol="WatchFace"/>
-<entry filename="Rez" lineNum="48" pc="268436630" symbol="WatchFace"/>
-<entry filename="Rez" lineNum="49" pc="268436682" symbol="WatchFace"/>
-<entry filename="Rez" lineNum="50" pc="268436728" symbol="WatchFace"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="49" pc="268435589" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="50" pc="268435608" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="51" pc="268435627" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="52" pc="268435649" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="55" pc="268435671" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="58" pc="268435691" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="59" pc="268435727" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="62" pc="268435775" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="63" pc="268435811" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="64" pc="268435841" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="65" pc="268435871" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="68" pc="268435917" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="73" pc="268435942" symbol="setHourCircle"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="74" pc="268435953" symbol="setHourCircle"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="77" pc="268435963" symbol="setHourCircle"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="78" pc="268435974" symbol="setHourCircle"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="82" pc="268435987" symbol="setHourCircle"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="85" pc="268436017" symbol="setHourCircle"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="86" pc="268436053" symbol="setHourCircle"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="92" pc="268436089" symbol="calcCircleCoord"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="93" pc="268436097" symbol="calcCircleCoord"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="94" pc="268436137" symbol="calcCircleCoord"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="95" pc="268436177" symbol="calcCircleCoord"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosApp.mc" lineNum="6" pc="268436192" symbol="initialize"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosApp.mc" lineNum="19" pc="268436219" symbol="getInitialView"/>
+<entry filename="Rez" lineNum="17" pc="268436259" symbol="initialize"/>
+<entry filename="Rez" lineNum="21" pc="268436286" symbol="draw"/>
+<entry filename="Rez" lineNum="22" pc="268436293" symbol="draw"/>
+<entry filename="Rez" lineNum="23" pc="268436300" symbol="draw"/>
+<entry filename="Rez" lineNum="24" pc="268436313" symbol="draw"/>
+<entry filename="Rez" lineNum="25" pc="268436326" symbol="draw"/>
+<entry filename="Rez" lineNum="30" pc="268436351" symbol="drawComplex"/>
+<entry filename="Rez" lineNum="31" pc="268436387" symbol="drawComplex"/>
+<entry filename="Rez" lineNum="45" pc="268436471" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="46" pc="268436485" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="47" pc="268436582" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="48" pc="268436597" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="49" pc="268436649" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="50" pc="268436695" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="51" pc="268436709" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="52" pc="268436806" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="53" pc="268436821" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="54" pc="268436873" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="55" pc="268436919" symbol="WatchFace"/>
 </pcToLineNum>
 <symbolTable>
 <entry id="10" module="true" symbol="Menus"/>
@@ -64,7 +68,7 @@
 <entry id="8389377" method="true" symbol="onExitSleep"/>
 <entry id="8389281" method="true" symbol="onStop"/>
 <entry id="8388641" module="true" symbol="Math"/>
-<entry id="19" method="true" symbol="calcCircleCoord"/>
+<entry id="20" method="true" symbol="calcCircleCoord"/>
 <entry id="8388772" module="true" symbol="Fonts"/>
 <entry field="true" id="8389063" symbol="identifier"/>
 <entry id="8389349" symbol="justification"/>
@@ -77,6 +81,7 @@
 <entry id="8389122" method="true" symbol="onLayout"/>
 <entry id="8389068" method="true" symbol="draw"/>
 <entry id="13" object="true" symbol="circle_face"/>
+<entry id="19" method="true" symbol="setHourCircle"/>
 <entry id="8388770" module="true" symbol="Strings"/>
 <entry field="true" id="8389067" symbol="height"/>
 <entry id="8389123" method="true" symbol="onShow"/>
@@ -87,21 +92,22 @@
 <entry id="8389125" method="true" symbol="onHide"/>
 </symbolTable>
 <localVars>
-<entry endPc="268435952" name="coords" stackId="6" startPc="268435889"/>
-<entry endPc="268435965" name="i" stackId="5" startPc="268435889"/>
-<entry endPc="268436119" name="hour" stackId="7" startPc="268435522"/>
-<entry endPc="268436119" name="view" stackId="4" startPc="268435522"/>
-<entry endPc="268436119" name="timeString" stackId="3" startPc="268435522"/>
-<entry endPc="268436119" name="coords" stackId="8" startPc="268435522"/>
-<entry endPc="268436119" name="clockTime" stackId="2" startPc="268435522"/>
-<entry endPc="268436213" name="coords" stackId="2" startPc="268436122"/>
-<entry endPc="268436381" name="pWidth" stackId="4" startPc="268436319"/>
-<entry endPc="268436381" name="pY" stackId="3" startPc="268436319"/>
-<entry endPc="268436381" name="pX" stackId="2" startPc="268436319"/>
-<entry endPc="268436381" name="pHeight" stackId="5" startPc="268436319"/>
-<entry endPc="268436745" name="rez_cmp_local_label_TimeLabel_fontHeight" stackId="4" startPc="268436504"/>
-<entry endPc="268436745" name="rez_cmp_local_label_TimeLabel_font" stackId="2" startPc="268436504"/>
-<entry endPc="268436745" name="rez_cmp_local_label_TimeLabel" stackId="3" startPc="268436504"/>
+<entry endPc="268435904" name="coords" stackId="5" startPc="268435841"/>
+<entry endPc="268435917" name="i" stackId="4" startPc="268435841"/>
+<entry endPc="268435939" name="view" stackId="3" startPc="268435522"/>
+<entry endPc="268435939" name="time" stackId="2" startPc="268435522"/>
+<entry endPc="268436086" name="coords" stackId="3" startPc="268435942"/>
+<entry endPc="268436180" name="coords" stackId="2" startPc="268436089"/>
+<entry endPc="268436348" name="pWidth" stackId="4" startPc="268436286"/>
+<entry endPc="268436348" name="pY" stackId="3" startPc="268436286"/>
+<entry endPc="268436348" name="pX" stackId="2" startPc="268436286"/>
+<entry endPc="268436348" name="pHeight" stackId="5" startPc="268436286"/>
+<entry endPc="268436946" name="rez_cmp_local_label_lDate" stackId="6" startPc="268436471"/>
+<entry endPc="268436946" name="rez_cmp_local_label_lDate_fontHeight" stackId="7" startPc="268436471"/>
+<entry endPc="268436946" name="rez_cmp_local_label_lTime_font" stackId="2" startPc="268436471"/>
+<entry endPc="268436946" name="rez_cmp_local_label_lDate_font" stackId="5" startPc="268436471"/>
+<entry endPc="268436946" name="rez_cmp_local_label_lTime_fontHeight" stackId="4" startPc="268436471"/>
+<entry endPc="268436946" name="rez_cmp_local_label_lTime" stackId="3" startPc="268436471"/>
 </localVars>
 <annotations/>
 <functions>
@@ -118,6 +124,11 @@
 <functionEntry name="onUpdate" parent="CirculosView">
 <param id="dc"/>
 <documentation><![CDATA[<div class="description"> Update the view<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry name="setHourCircle" parent="CirculosView">
+<param id="dc"/>
+<param id="hour"/>
+<documentation/>
 </functionEntry>
 <functionEntry name="calcCircleCoord" parent="CirculosView">
 <param id="rads"/>

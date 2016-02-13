@@ -14,10 +14,10 @@ class CirculosView extends Ui.WatchFace {
 	hidden const PI 	= Math.PI;
 	
 	hidden var hourRads = [
-		//make a zero-element pad to align the indicies
-		//with a one-based clock numbering scheme
+		//! make a zero-element pad to align the indicies
+		//! with a one-based clock numbering scheme
 		[0, 0],
-		//the clock begins... 
+		//! the clock begins... 
 		[1, 5*PI/3],	[2, 11*PI/6], 	[3, 0],
 		[4, PI/6], 		[5, PI/3], 		[6, PI/2], 
 		[7, 2*PI/3], 	[8, 5*PI/6], 	[9, PI],
@@ -41,51 +41,54 @@ class CirculosView extends Ui.WatchFace {
 
     //! Update the view
     function onUpdate(dc) {
-        // Get and show the current time
-        var clockTime = Sys.getClockTime();
-        var timeString = Lang.format("$1$:$2$", [clockTime.hour, clockTime.min.format("%02d")]);
-        var view = View.findDrawableById("TimeLabel");
+        //! Get the current time
+        var time = Sys.getClockTime();
+        var view = View.findDrawableById("lTime").setText(time.min.toString());
         
+        //! get some basic screen dimensions and coords
         width 	= dc.getWidth();
         height 	= dc.getHeight();
         xCenter = width/2;
         yCenter = height/2;
         
-        // Call the parent onUpdate function to redraw the layout
+        //! Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);        
         
-        //bezel circle; I could take it or leave it
+        //! bezel circle; I could take it or leave it
 		dc.setColor(Gfx.COLOR_LT_GRAY, Gfx.COLOR_BLACK);
 		dc.drawCircle(xCenter, yCenter, width/2 - 2);
 		
-		//draw the layout hour circles
+		//! draw the layout hour circles
 		dc.setColor(Gfx.COLOR_GREEN, Gfx.COLOR_BLACK);
 		for (var i = 1; i < hourRads.size(); i++) {
 			var coords = calcCircleCoord(hourRads[i][1]);
 			dc.drawCircle(coords[0], coords[1], 10);
 		}
 		
-		//get the current hour value
-		var hour = clockTime.hour;
+		setHourCircle(dc, time.hour);		
+    }
+    
+    function setHourCircle(dc, hour) {
+    	//! get the current hour value
 		if (hour == 0) {
 			hour = 12;
-		} //some change
+		}
 		
 		if (hour > 12) {
 			hour = hour - 12;
 		}
 		
-		//calculate the hour/rads coordinates
+		//! calculate the hour/rads coordinates
 		var coords = calcCircleCoord(hourRads[hour][1]);
 		
-		//draw it
+		//! draw it
 		dc.setColor(Gfx.COLOR_YELLOW, Gfx.COLOR_BLACK);
-		dc.fillCircle(coords[0], coords[1], 15);
+		dc.fillCircle(coords[0], coords[1], 17);
     }
     
     function calcCircleCoord(rads) {
-    	//x = cx + r * cos(a)
-		//y = cy + r * sin(a)
+    	//! x = cx + r * cos(a)
+		//! y = cy + r * sin(a)
     	var coords = new[2];
     	coords[0] = xCenter + 80 * Math.cos(rads);
     	coords[1] = yCenter + 80 * Math.sin(rads);
