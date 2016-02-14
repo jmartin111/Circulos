@@ -12,6 +12,7 @@ class CirculosView extends Ui.WatchFace {
 	hidden var xCenter	= 0;
 	hidden var yCenter 	= 0;
 	hidden const PI 	= Math.PI;
+	hidden var rFont	= null;
 	
 	hidden var hourRads = [
 		//! make a zero-element pad to align the indicies
@@ -31,6 +32,7 @@ class CirculosView extends Ui.WatchFace {
     //! Load your resources here
     function onLayout(dc) {
         setLayout(Rez.Layouts.WatchFace(dc));
+        rFont = Ui.loadResource(Rez.Fonts.diskopia2);
     }
 
     //! Called when this View is brought to the foreground. Restore
@@ -42,8 +44,11 @@ class CirculosView extends Ui.WatchFace {
     //! Update the view
     function onUpdate(dc) {
         //! Get the current time
-        var time = Sys.getClockTime();
-        var view = View.findDrawableById("lTime").setText(time.min.toString());
+        var time 	= Sys.getClockTime();
+        var vSecs	= View.findDrawableById("lTime");
+        vSecs.setFont(rFont);
+        vSecs.setText(time.min.toString());
+        vSecs.setColor(Gfx.COLOR_YELLOW);
         
         //! get some basic screen dimensions and coords
         width 	= dc.getWidth();
@@ -65,10 +70,10 @@ class CirculosView extends Ui.WatchFace {
 			dc.drawCircle(coords[0], coords[1], 10);
 		}
 		
-		setHourCircle(dc, time.hour);		
+		drawHourCircle(dc, time.hour);		
     }
     
-    function setHourCircle(dc, hour) {
+    function drawHourCircle(dc, hour) {
     	//! get the current hour value
 		if (hour == 0) {
 			hour = 12;
@@ -81,9 +86,16 @@ class CirculosView extends Ui.WatchFace {
 		//! calculate the hour/rads coordinates
 		var coords = calcCircleCoord(hourRads[hour][1]);
 		
+		//! get battery info
+		/*var sysStats 		= Sys.getSystemStats();
+		var sBatteryLife 	= sysStats.battery.format("%.0f")+"%";
+		var vBatt = View.findDrawableById("lBatt");
+		vBatt.setText(sBatteryLife);
+		vBatt.setLocation(coords[0], coords[1]);*/
+		
 		//! draw it
 		dc.setColor(Gfx.COLOR_YELLOW, Gfx.COLOR_BLACK);
-		dc.fillCircle(coords[0], coords[1], 17);
+		dc.fillCircle(coords[0], coords[1], 17);		
     }
     
     function calcCircleCoord(rads) {

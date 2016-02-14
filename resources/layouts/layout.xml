@@ -1,4 +1,5 @@
 <layout id="WatchFace">
     <label id="lTime" x="center" y="center" font="Gfx.FONT_NUMBER_MEDIUM" justification="Gfx.TEXT_JUSTIFY_CENTER" color="Gfx.COLOR_YELLOW" />
     <label id="lDate" x="center" y="center" font="Gfx.FONT_NUMBER_MEDIUM" justification="Gfx.TEXT_JUSTIFY_CENTER" color="Gfx.COLOR_YELLOW" />
+    <label id="lBatt" x="center" y="center" font="Gfx.FONT_TINY" justification="Gfx.TEXT_JUSTIFY_VCENTER" color="Gfx.COLOR_WHITE" />
 </layout>
