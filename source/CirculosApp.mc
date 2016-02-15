@@ -1,6 +1,9 @@
 using Toybox.Application as App;
+using Toybox.System as Sys;
 
 class CirculosApp extends App.AppBase {
+
+	hidden var vCirculos;
 
     function initialize() {
         AppBase.initialize();
@@ -16,7 +19,13 @@ class CirculosApp extends App.AppBase {
 
     //! Return the initial view of your application here
     function getInitialView() {
-        return [ new CirculosView() ];
+    	vCirculos = new CirculosView();
+        return [ vCirculos ];
     }
+    
+    //! New app settings have been received so trigger a UI update
+    function onSettingsChanged() {
+    	vCirculos.onSettingsChanged();
+ 	}
 
 }

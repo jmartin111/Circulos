@@ -1,0 +1,36 @@
+<settings>
+    <setting propertyKey="@Properties.TimeColor" title="@Strings.TimeColorTitle">
+        <settingConfig type="list">
+        	<listEntry value="0x000000">@Strings.ColorBlack</listEntry>
+        	<listEntry value="0x0000FF">@Strings.ColorBlue</listEntry>
+        	<listEntry value="0x555555">@Strings.ColorDarkGray</listEntry>
+            <listEntry value="0xAA0000">@Strings.ColorDarkRed</listEntry>
+			<listEntry value="0x00FF00">@Strings.ColorGreen</listEntry> 
+            <listEntry value="0x00AAFF">@Strings.ColorLtBlue</listEntry>
+            <listEntry value="0xAAAAAA">@Strings.ColorLightGray</listEntry>            
+            <listEntry value="0xFF5500">@Strings.ColorOrange</listEntry>  
+            <listEntry value="0xFF00FF">@Strings.ColorPink</listEntry>
+            <listEntry value="0x5500FF">@Strings.ColorPurple</listEntry> 
+            <listEntry value="0xFFFFFF">@Strings.ColorWhite</listEntry> 
+            <listEntry value="0xFFAA00">@Strings.ColorYellow</listEntry>
+        </settingConfig>
+    </setting>
+    <setting propertyKey="@Properties.DialColor" title="@Strings.DialColorTitle">
+        <settingConfig type="list">
+            <listEntry value="0x0000FF">@Strings.ColorBlue</listEntry>
+        	<listEntry value="0x555555">@Strings.ColorDarkGray</listEntry>
+            <listEntry value="0xAA0000">@Strings.ColorDarkRed</listEntry>
+			<listEntry value="0x00FF00">@Strings.ColorGreen</listEntry> 
+            <listEntry value="0x00AAFF">@Strings.ColorLtBlue</listEntry>
+            <listEntry value="0xAAAAAA">@Strings.ColorLightGray</listEntry>            
+            <listEntry value="0xFF5500">@Strings.ColorOrange</listEntry>  
+            <listEntry value="0xFF00FF">@Strings.ColorPink</listEntry>
+            <listEntry value="0x5500FF">@Strings.ColorPurple</listEntry> 
+            <listEntry value="0xFFFFFF">@Strings.ColorWhite</listEntry> 
+            <listEntry value="0xFFAA00">@Strings.ColorYellow</listEntry>           
+        </settingConfig>
+    </setting>
+    <!--setting propertyKey="@Properties.UseMilitaryTime" title="@Strings.TimeFormatTitle">
+        <settingConfig type="boolean" />
+    </setting-->
+</settings>

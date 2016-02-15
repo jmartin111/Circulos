@@ -4,6 +4,7 @@ using Toybox.System as Sys;
 using Toybox.Lang as Lang;
 using Toybox.Application as App;
 using Toybox.Math as Math;
+using Toybox.Activity as Act;
 
 class CirculosView extends Ui.WatchFace {
 
@@ -24,7 +25,21 @@ class CirculosView extends Ui.WatchFace {
 		[7, 2*PI/3], 	[8, 5*PI/6], 	[9, PI],
 		[10, 7*PI/6],	[11, 4*PI/3], 	[12, 3*PI/2]
 	];
-		
+	
+	hidden var numToWord = [
+		[0, "o'clock"], 
+		[1, "one"], [2, "two"], [3, "three"], [4, "oh four"], [5, "oh five"], [6, "oh six"],
+		[7, "oh seven"], [8, "oh eight"], [9, "oh nine"], [10, "ten"], [11, "eleven"], [12, "twelve"],
+		[13, "thirteen"], [14, "fourteen"], [15, "fifteen"], [16, "sixteen"], [17, "seventeen"], [18, "eighteen"],
+		[19, "nineteen"], [20, "twenty"], [21, "twenty\none"], [22, "twenty\ntwo"], [23, "twenty\nthree"], [24, "twenty\nfour"],
+		[25, "twenty\nfive"], [26, "twenty\nsix"], [27, "twenty\nseven"], [28, "twenty\neight"], [29, "twenty\nnine"], [30, "thirty"],
+		[31, "thirty\none"], [32, "thirty\ntwo"], [33, "thirty\nthree"], [34, "thirty\nfour"], [35, "thirty\nfive"], [36, "thirty\nsix"],
+		[37, "thirty\nseven"], [38, "thirty\neight"], [39, "thirty\nnine"], [40, "forty"], [41, "forty\none"], [42, "forty\ntwo"],
+		[43, "forty\nthree"], [44, "forty\nfour"], [45, "forty\nfive"], [46, "forty\nsix"], [47, "forty\nseven"], [48, "forty\neight"],
+		[49, "forty\nnine"], [50, "fifty"], [51, "fifty\none"], [52, "fifty\ntwo"], [53, "fifty\nthree"], [54, "fifty\nfour"],
+		[55, "fifty\nfive"], [56, "fifty\nsix"], [57, "fifty\nseven"], [58, "fifty\neight"], [59, "fifty\nnine"] 
+	];
+	
     function initialize() {
         WatchFace.initialize();
     }
@@ -32,7 +47,7 @@ class CirculosView extends Ui.WatchFace {
     //! Load your resources here
     function onLayout(dc) {
         setLayout(Rez.Layouts.WatchFace(dc));
-        rFont = Ui.loadResource(Rez.Fonts.diskopia2);
+        rFont = Ui.loadResource(Rez.Fonts.squared_circle);
     }
 
     //! Called when this View is brought to the foreground. Restore
@@ -43,12 +58,16 @@ class CirculosView extends Ui.WatchFace {
 
     //! Update the view
     function onUpdate(dc) {
+    
+    	var info = Act.getActivityInfo();
+    	
         //! Get the current time
         var time 	= Sys.getClockTime();
-        var vSecs	= View.findDrawableById("lTime");
-        vSecs.setFont(rFont);
-        vSecs.setText(time.min.toString());
-        vSecs.setColor(Gfx.COLOR_YELLOW);
+        var vMin	= View.findDrawableById("lTime");
+        var sMin	= numToWord[time.min][1];
+        vMin.setFont(rFont);
+        vMin.setText(sMin);
+        vMin.setColor(App.getApp().getProperty("TimeColor"));
         
         //! get some basic screen dimensions and coords
         width 	= dc.getWidth();
@@ -64,7 +83,7 @@ class CirculosView extends Ui.WatchFace {
 		dc.drawCircle(xCenter, yCenter, width/2 - 2);
 		
 		//! draw the layout hour circles
-		dc.setColor(Gfx.COLOR_GREEN, Gfx.COLOR_BLACK);
+		dc.setColor(App.getApp().getProperty("DialColor"), Gfx.COLOR_BLACK);
 		for (var i = 1; i < hourRads.size(); i++) {
 			var coords = calcCircleCoord(hourRads[i][1]);
 			dc.drawCircle(coords[0], coords[1], 10);
@@ -94,7 +113,7 @@ class CirculosView extends Ui.WatchFace {
 		vBatt.setLocation(coords[0], coords[1]);*/
 		
 		//! draw it
-		dc.setColor(Gfx.COLOR_YELLOW, Gfx.COLOR_BLACK);
+		dc.setColor(App.getApp().getProperty("TimeColor"), Gfx.COLOR_BLACK);
 		dc.fillCircle(coords[0], coords[1], 17);		
     }
     
@@ -105,6 +124,11 @@ class CirculosView extends Ui.WatchFace {
     	coords[0] = xCenter + 80 * Math.cos(rads);
     	coords[1] = yCenter + 80 * Math.sin(rads);
     	return coords;    	
+    }
+    
+    function onSettingsChanged() {
+        //settingsChange = true;
+        Ui.requestUpdate();
     }
 
     //! Called when this View is removed from the screen. Save the
