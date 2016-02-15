@@ -1,3 +1,4 @@
 <fonts>
-	<font id="squared_circle" filename="squared_circle.fnt" filter=" abcdefghijklmnopqrstuvwxyz" />
+	<font id="squared_circle" filename="squared_circle.fnt" filter="' abcdefghijklmnopqrstuvwxyz" />
+	<font id="squared_circle_date" filename="squared_circle_date.fnt" filter=".0123456789" />
 </fonts>

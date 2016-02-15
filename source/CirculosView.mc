@@ -5,15 +5,17 @@ using Toybox.Lang as Lang;
 using Toybox.Application as App;
 using Toybox.Math as Math;
 using Toybox.Activity as Act;
+using Toybox.Time.Gregorian as Date;
 
 class CirculosView extends Ui.WatchFace {
 
-	hidden var width 	= 0;
-	hidden var height 	= 0;
-	hidden var xCenter	= 0;
-	hidden var yCenter 	= 0;
-	hidden const PI 	= Math.PI;
-	hidden var rFont	= null;
+	hidden var width 		= 0;
+	hidden var height 		= 0;
+	hidden var xCenter		= 0;
+	hidden var yCenter 		= 0;
+	hidden const PI 		= Math.PI;
+	hidden var rFont		= null;
+	hidden var rFontDate 	= null;
 	
 	hidden var hourRads = [
 		//! make a zero-element pad to align the indicies
@@ -28,7 +30,7 @@ class CirculosView extends Ui.WatchFace {
 	
 	hidden var numToWord = [
 		[0, "o'clock"], 
-		[1, "one"], [2, "two"], [3, "three"], [4, "oh four"], [5, "oh five"], [6, "oh six"],
+		[1, "oh one"], [2, "oh two"], [3, "oh three"], [4, "oh four"], [5, "oh five"], [6, "oh six"],
 		[7, "oh seven"], [8, "oh eight"], [9, "oh nine"], [10, "ten"], [11, "eleven"], [12, "twelve"],
 		[13, "thirteen"], [14, "fourteen"], [15, "fifteen"], [16, "sixteen"], [17, "seventeen"], [18, "eighteen"],
 		[19, "nineteen"], [20, "twenty"], [21, "twenty\none"], [22, "twenty\ntwo"], [23, "twenty\nthree"], [24, "twenty\nfour"],
@@ -48,6 +50,7 @@ class CirculosView extends Ui.WatchFace {
     function onLayout(dc) {
         setLayout(Rez.Layouts.WatchFace(dc));
         rFont = Ui.loadResource(Rez.Fonts.squared_circle);
+        rFontDate = Ui.loadResource(Rez.Fonts.squared_circle_date);
     }
 
     //! Called when this View is brought to the foreground. Restore
@@ -59,6 +62,12 @@ class CirculosView extends Ui.WatchFace {
     //! Update the view
     function onUpdate(dc) {
     
+    	//! get some basic screen dimensions and coords
+        width 	= dc.getWidth();
+        height 	= dc.getHeight();
+        xCenter = width/2;
+        yCenter = height/2;
+    
     	var info = Act.getActivityInfo();
     	
         //! Get the current time
@@ -68,13 +77,22 @@ class CirculosView extends Ui.WatchFace {
         vMin.setFont(rFont);
         vMin.setText(sMin);
         vMin.setColor(App.getApp().getProperty("TimeColor"));
+        vMin.setLocation(xCenter, yCenter - 50);
         
-        //! get some basic screen dimensions and coords
-        width 	= dc.getWidth();
-        height 	= dc.getHeight();
-        xCenter = width/2;
-        yCenter = height/2;
-        
+        //! Get the date
+        var now 		= Time.now();
+		var dateInfo 	= Date.info(now, Time.FORMAT_SHORT);		
+		var sDayOfWeek 	= dateInfo.day_of_week;
+    	var sDay 		= dateInfo.day;
+    	//var sYear		= dateInfo.year;
+    	var sDate 		= sDayOfWeek + "." + sDay;
+    	
+    	//! draw the date
+		var vDate = View.findDrawableById("lDate");
+		vDate.setText(sDate);
+		vDate.setFont(rFontDate);
+		vDate.setLocation(xCenter, yCenter + 50);
+                
         //! Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);        
         
@@ -86,10 +104,10 @@ class CirculosView extends Ui.WatchFace {
 		dc.setColor(App.getApp().getProperty("DialColor"), Gfx.COLOR_BLACK);
 		for (var i = 1; i < hourRads.size(); i++) {
 			var coords = calcCircleCoord(hourRads[i][1]);
-			dc.drawCircle(coords[0], coords[1], 10);
+			dc.fillCircle(coords[0], coords[1], 7);
 		}
 		
-		drawHourCircle(dc, time.hour);		
+		drawHourCircle(dc, time.hour);	
     }
     
     function drawHourCircle(dc, hour) {
@@ -102,9 +120,6 @@ class CirculosView extends Ui.WatchFace {
 			hour = hour - 12;
 		}
 		
-		//! calculate the hour/rads coordinates
-		var coords = calcCircleCoord(hourRads[hour][1]);
-		
 		//! get battery info
 		/*var sysStats 		= Sys.getSystemStats();
 		var sBatteryLife 	= sysStats.battery.format("%.0f")+"%";
@@ -112,17 +127,19 @@ class CirculosView extends Ui.WatchFace {
 		vBatt.setText(sBatteryLife);
 		vBatt.setLocation(coords[0], coords[1]);*/
 		
-		//! draw it
+		//! draw the time circle
+		var coords = calcCircleCoord(hourRads[hour][1]);
 		dc.setColor(App.getApp().getProperty("TimeColor"), Gfx.COLOR_BLACK);
-		dc.fillCircle(coords[0], coords[1], 17);		
+		dc.drawCircle(coords[0], coords[1], 16);				
     }
     
+    //! calculate the hour/rads coordinates
     function calcCircleCoord(rads) {
     	//! x = cx + r * cos(a)
 		//! y = cy + r * sin(a)
     	var coords = new[2];
-    	coords[0] = xCenter + 80 * Math.cos(rads);
-    	coords[1] = yCenter + 80 * Math.sin(rads);
+    	coords[0] = xCenter + 85 * Math.cos(rads);
+    	coords[1] = yCenter + 85 * Math.sin(rads);
     	return coords;    	
     }
     

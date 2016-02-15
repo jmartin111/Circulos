@@ -1,4 +1,5 @@
 <properties>
 	<property id="TimeColor" type="number">0xFF0000</property>
 	<property id="DialColor" type="number">0x000000</property>
+	<property id="BgColor" type="number">0x000000</property>
 </properties>

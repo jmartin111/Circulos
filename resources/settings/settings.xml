@@ -30,7 +30,14 @@
             <listEntry value="0xFFAA00">@Strings.ColorYellow</listEntry>           
         </settingConfig>
     </setting>
-    <!--setting propertyKey="@Properties.UseMilitaryTime" title="@Strings.TimeFormatTitle">
-        <settingConfig type="boolean" />
-    </setting-->
+    <setting propertyKey="@Properties.BgColor" title="@Strings.BgColorTitle">
+        <settingConfig type="list">
+        	<listEntry value="0xAAAAAA">@Strings.ColorLightGray</listEntry>            
+            <listEntry value="0xFF5500">@Strings.ColorDarkGray</listEntry>  
+            <listEntry value="0xFF00FF">@Strings.ColorPink</listEntry>
+            <listEntry value="0x000000">@Strings.ColorBlack</listEntry> 
+            <listEntry value="0xFFFFFF">@Strings.ColorWhite</listEntry>
+            <listEntry value="0xFFAA00">@Strings.ColorYellow</listEntry>
+        </settingConfig>
+    </setting>
 </settings>

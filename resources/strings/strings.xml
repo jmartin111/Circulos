@@ -2,6 +2,7 @@
     <string id="AppName">Circulos</string>
     <string id="TimeColorTitle">Set Time Color</string>
     <string id="DialColorTitle">Set Dial Color</string>
+    <string id="BgColorTitle">Set Background Color</string>
     
     <string id="ColorDarkGray">Dark Gray</string>
     <string id="ColorLightGray">Light Gray</string>

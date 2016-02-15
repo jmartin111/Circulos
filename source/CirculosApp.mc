@@ -1,5 +1,6 @@
 using Toybox.Application as App;
-using Toybox.System as Sys;
+using Toybox.WatchUi as Ui;
+using Toybox.Graphics as Gfx;
 
 class CirculosApp extends App.AppBase {
 
@@ -27,5 +28,23 @@ class CirculosApp extends App.AppBase {
     function onSettingsChanged() {
     	vCirculos.onSettingsChanged();
  	}
+
+}
+
+class Background extends Ui.Drawable {
+
+    function initialize() {
+        var dictionary = {
+            :identifier => "Background"
+        };
+
+        Drawable.initialize(dictionary);
+    }
+
+    function draw(dc) {
+        // Set the background color then call to clear the screen
+        dc.setColor(Gfx.COLOR_TRANSPARENT, App.getApp().getProperty("BgColor"));
+        dc.clear();
+    }
 
 }
