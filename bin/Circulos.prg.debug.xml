@@ -26,90 +26,90 @@
 <entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="92" pc="268435991" symbol="onUpdate"/>
 <entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="93" pc="268436005" symbol="onUpdate"/>
 <entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="94" pc="268436025" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="97" pc="268436059" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="100" pc="268436079" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="101" pc="268436115" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="104" pc="268436163" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="105" pc="268436216" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="106" pc="268436246" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="107" pc="268436276" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="110" pc="268436322" symbol="onUpdate"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="115" pc="268436347" symbol="drawHourCircle"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="116" pc="268436358" symbol="drawHourCircle"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="119" pc="268436368" symbol="drawHourCircle"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="120" pc="268436379" symbol="drawHourCircle"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="131" pc="268436392" symbol="drawHourCircle"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="132" pc="268436422" symbol="drawHourCircle"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="133" pc="268436475" symbol="drawHourCircle"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="140" pc="268436511" symbol="calcCircleCoord"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="141" pc="268436519" symbol="calcCircleCoord"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="142" pc="268436559" symbol="calcCircleCoord"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="143" pc="268436599" symbol="calcCircleCoord"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="148" pc="268436605" symbol="onSettingsChanged"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosApp.mc" lineNum="10" pc="268436633" symbol="initialize"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosApp.mc" lineNum="23" pc="268436660" symbol="getInitialView"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosApp.mc" lineNum="24" pc="268436690" symbol="getInitialView"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosApp.mc" lineNum="29" pc="268436716" symbol="onSettingsChanged"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosApp.mc" lineNum="37" pc="268436737" symbol="initialize"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosApp.mc" lineNum="41" pc="268436758" symbol="initialize"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosApp.mc" lineNum="46" pc="268436781" symbol="draw"/>
-<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosApp.mc" lineNum="47" pc="268436834" symbol="draw"/>
-<entry filename="Rez" lineNum="34" pc="268436849" symbol="initialize"/>
-<entry filename="Rez" lineNum="38" pc="268436876" symbol="draw"/>
-<entry filename="Rez" lineNum="39" pc="268436883" symbol="draw"/>
-<entry filename="Rez" lineNum="40" pc="268436890" symbol="draw"/>
-<entry filename="Rez" lineNum="41" pc="268436903" symbol="draw"/>
-<entry filename="Rez" lineNum="42" pc="268436916" symbol="draw"/>
-<entry filename="Rez" lineNum="47" pc="268436941" symbol="drawComplex"/>
-<entry filename="Rez" lineNum="48" pc="268436977" symbol="drawComplex"/>
-<entry filename="Rez" lineNum="62" pc="268437061" symbol="WatchFace"/>
-<entry filename="Rez" lineNum="63" pc="268437086" symbol="WatchFace"/>
-<entry filename="Rez" lineNum="64" pc="268437113" symbol="WatchFace"/>
-<entry filename="Rez" lineNum="66" pc="268437129" symbol="WatchFace"/>
-<entry filename="Rez" lineNum="67" pc="268437143" symbol="WatchFace"/>
-<entry filename="Rez" lineNum="68" pc="268437240" symbol="WatchFace"/>
-<entry filename="Rez" lineNum="69" pc="268437255" symbol="WatchFace"/>
-<entry filename="Rez" lineNum="70" pc="268437307" symbol="WatchFace"/>
-<entry filename="Rez" lineNum="71" pc="268437353" symbol="WatchFace"/>
-<entry filename="Rez" lineNum="72" pc="268437367" symbol="WatchFace"/>
-<entry filename="Rez" lineNum="73" pc="268437464" symbol="WatchFace"/>
-<entry filename="Rez" lineNum="74" pc="268437479" symbol="WatchFace"/>
-<entry filename="Rez" lineNum="75" pc="268437531" symbol="WatchFace"/>
-<entry filename="Rez" lineNum="76" pc="268437577" symbol="WatchFace"/>
-<entry filename="Rez" lineNum="77" pc="268437591" symbol="WatchFace"/>
-<entry filename="Rez" lineNum="78" pc="268437688" symbol="WatchFace"/>
-<entry filename="Rez" lineNum="79" pc="268437703" symbol="WatchFace"/>
-<entry filename="Rez" lineNum="80" pc="268437755" symbol="WatchFace"/>
-<entry filename="Rez" lineNum="81" pc="268437801" symbol="WatchFace"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="95" pc="268436066" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="98" pc="268436100" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="101" pc="268436120" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="102" pc="268436173" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="103" pc="268436203" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="104" pc="268436233" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="107" pc="268436279" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="112" pc="268436304" symbol="drawHourCircle"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="113" pc="268436315" symbol="drawHourCircle"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="116" pc="268436325" symbol="drawHourCircle"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="117" pc="268436336" symbol="drawHourCircle"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="128" pc="268436349" symbol="drawHourCircle"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="129" pc="268436379" symbol="drawHourCircle"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="130" pc="268436432" symbol="drawHourCircle"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="137" pc="268436468" symbol="calcCircleCoord"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="138" pc="268436476" symbol="calcCircleCoord"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="139" pc="268436516" symbol="calcCircleCoord"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="140" pc="268436556" symbol="calcCircleCoord"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosView.mc" lineNum="145" pc="268436562" symbol="onSettingsChanged"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosApp.mc" lineNum="10" pc="268436590" symbol="initialize"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosApp.mc" lineNum="23" pc="268436617" symbol="getInitialView"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosApp.mc" lineNum="24" pc="268436647" symbol="getInitialView"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosApp.mc" lineNum="29" pc="268436673" symbol="onSettingsChanged"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosApp.mc" lineNum="37" pc="268436694" symbol="initialize"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosApp.mc" lineNum="41" pc="268436715" symbol="initialize"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosApp.mc" lineNum="46" pc="268436738" symbol="draw"/>
+<entry filename="C:\\Users\\Jeff\\_my_garmin_workspace\\Circulos\\source\\CirculosApp.mc" lineNum="47" pc="268436791" symbol="draw"/>
+<entry filename="Rez" lineNum="35" pc="268436806" symbol="initialize"/>
+<entry filename="Rez" lineNum="39" pc="268436833" symbol="draw"/>
+<entry filename="Rez" lineNum="40" pc="268436840" symbol="draw"/>
+<entry filename="Rez" lineNum="41" pc="268436847" symbol="draw"/>
+<entry filename="Rez" lineNum="42" pc="268436860" symbol="draw"/>
+<entry filename="Rez" lineNum="43" pc="268436873" symbol="draw"/>
+<entry filename="Rez" lineNum="48" pc="268436898" symbol="drawComplex"/>
+<entry filename="Rez" lineNum="49" pc="268436934" symbol="drawComplex"/>
+<entry filename="Rez" lineNum="63" pc="268437018" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="64" pc="268437043" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="65" pc="268437070" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="67" pc="268437086" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="68" pc="268437100" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="69" pc="268437197" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="70" pc="268437212" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="71" pc="268437264" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="72" pc="268437310" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="73" pc="268437324" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="74" pc="268437421" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="75" pc="268437436" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="76" pc="268437488" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="77" pc="268437534" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="78" pc="268437548" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="79" pc="268437645" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="80" pc="268437660" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="81" pc="268437712" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="82" pc="268437758" symbol="WatchFace"/>
 </pcToLineNum>
 <symbolTable>
 <entry field="true" id="16" symbol="squared_circle"/>
-<entry id="41" method="true" symbol="calcCircleCoord"/>
+<entry id="42" method="true" symbol="calcCircleCoord"/>
 <entry id="8389124" method="true" symbol="onUpdate"/>
 <entry id="8389349" symbol="justification"/>
 <entry id="14" object="true" symbol="circle_face"/>
 <entry field="true" id="19" symbol="ColorBlue"/>
-<entry id="38" symbol="hourRads"/>
+<entry id="39" symbol="hourRads"/>
 <entry field="true" id="8388611" module="true" symbol="Toybox"/>
 <entry field="true" id="8388893" symbol="PI"/>
 <entry field="true" id="26" symbol="ColorOrange"/>
 <entry id="8388770" module="true" symbol="Strings"/>
-<entry field="true" id="33" symbol="ColorGreen"/>
+<entry field="true" id="34" symbol="ColorGreen"/>
 <entry field="true" id="23" symbol="ColorLtBlue"/>
 <entry field="true" id="25" symbol="ColorYellow"/>
-<entry field="true" id="32" symbol="ColorWhite"/>
+<entry field="true" id="33" symbol="ColorWhite"/>
 <entry id="8389280" method="true" symbol="getInitialView"/>
 <entry id="8389068" method="true" symbol="draw"/>
 <entry id="8389377" method="true" symbol="onExitSleep"/>
+<entry field="true" id="29" symbol="HrDateColorTitle"/>
 <entry id="8388640" module="true" symbol="Lang"/>
 <entry field="true" id="24" symbol="ColorBlack"/>
 <entry id="8388769" module="true" symbol="Rez"/>
 <entry id="8389123" method="true" symbol="onShow"/>
 <entry id="15" method="true" symbol="drawComplex"/>
-<entry field="true" id="31" symbol="ColorPink"/>
-<entry id="40" method="true" symbol="drawHourCircle"/>
+<entry field="true" id="32" symbol="ColorPink"/>
+<entry id="41" method="true" symbol="drawHourCircle"/>
 <entry field="true" id="28" symbol="TimeColorTitle"/>
-<entry id="42" symbol="vCirculos"/>
+<entry id="43" symbol="vCirculos"/>
 <entry id="8388702" method="true" symbol="initialize"/>
 <entry field="true" id="27" symbol="AppName"/>
 <entry id="8389375" method="true" object="true" symbol="WatchFace"/>
@@ -122,60 +122,60 @@
 <entry id="8389122" method="true" symbol="onLayout"/>
 <entry field="true" id="21" symbol="ColorDarkGray"/>
 <entry id="8389279" method="true" symbol="onStart"/>
-<entry id="36" symbol="rFont"/>
+<entry id="37" symbol="rFont"/>
 <entry id="8389376" method="true" symbol="onEnterSleep"/>
 <entry id="8389348" symbol="font"/>
 <entry field="true" id="18" symbol="ColorLightGray"/>
-<entry id="37" symbol="rFontDate"/>
+<entry id="38" symbol="rFontDate"/>
 <entry id="8389347" symbol="color"/>
 <entry field="true" id="8389067" symbol="height"/>
-<entry id="39" symbol="numToWord"/>
+<entry id="40" symbol="numToWord"/>
 <entry id="12" module="true" symbol="Layouts"/>
 <entry field="true" id="17" symbol="squared_circle_date"/>
 <entry field="true" id="22" symbol="DialColorTitle"/>
-<entry id="35" symbol="yCenter"/>
+<entry id="36" symbol="yCenter"/>
 <entry id="8389125" method="true" symbol="onHide"/>
-<entry id="34" symbol="xCenter"/>
+<entry id="35" symbol="xCenter"/>
 <entry field="true" id="8389066" symbol="width"/>
 <entry field="true" id="8389063" symbol="identifier"/>
 <entry id="11" module="true" symbol="Menus"/>
 <entry field="true" id="20" symbol="ColorDarkRed"/>
 <entry id="8" object="true" symbol="CirculosView"/>
-<entry field="true" id="29" symbol="BgColorTitle"/>
+<entry field="true" id="30" symbol="BgColorTitle"/>
 <entry id="9" object="true" symbol="CirculosApp"/>
 <entry id="8388772" module="true" symbol="Fonts"/>
-<entry field="true" id="30" symbol="ColorPurple"/>
+<entry field="true" id="31" symbol="ColorPurple"/>
 </symbolTable>
 <localVars>
-<entry endPc="268436309" name="coords" stackId="13" startPc="268436246"/>
-<entry endPc="268436322" name="i" stackId="12" startPc="268436246"/>
-<entry endPc="268436344" name="now" stackId="6" startPc="268435608"/>
-<entry endPc="268436344" name="info" stackId="2" startPc="268435608"/>
-<entry endPc="268436344" name="time" stackId="3" startPc="268435608"/>
-<entry endPc="268436344" name="vDate" stackId="11" startPc="268435608"/>
-<entry endPc="268436344" name="sMin" stackId="5" startPc="268435608"/>
-<entry endPc="268436344" name="sDate" stackId="10" startPc="268435608"/>
-<entry endPc="268436344" name="vMin" stackId="4" startPc="268435608"/>
-<entry endPc="268436344" name="sDay" stackId="9" startPc="268435608"/>
-<entry endPc="268436344" name="sDayOfWeek" stackId="8" startPc="268435608"/>
-<entry endPc="268436344" name="dateInfo" stackId="7" startPc="268435608"/>
-<entry endPc="268436508" name="coords" stackId="3" startPc="268436347"/>
-<entry endPc="268436602" name="coords" stackId="2" startPc="268436511"/>
-<entry endPc="268436778" name="dictionary" stackId="1" startPc="268436737"/>
-<entry endPc="268436938" name="pWidth" stackId="4" startPc="268436876"/>
-<entry endPc="268436938" name="pY" stackId="3" startPc="268436876"/>
-<entry endPc="268436938" name="pX" stackId="2" startPc="268436876"/>
-<entry endPc="268436938" name="pHeight" stackId="5" startPc="268436876"/>
-<entry endPc="268437848" name="rez_cmp_local_label_lDate_font" stackId="6" startPc="268437061"/>
-<entry endPc="268437848" name="rez_cmp_local_label_lBatt" stackId="10" startPc="268437061"/>
-<entry endPc="268437848" name="rez_cmp_local_label_lTime" stackId="4" startPc="268437061"/>
-<entry endPc="268437848" name="rez_cmp_local_label_lDate" stackId="7" startPc="268437061"/>
-<entry endPc="268437848" name="rez_cmp_local_label_lTime_fontHeight" stackId="5" startPc="268437061"/>
-<entry endPc="268437848" name="rez_cmp_local_label_lBatt_fontHeight" stackId="11" startPc="268437061"/>
-<entry endPc="268437848" name="rez_cmp_local_label_lTime_font" stackId="3" startPc="268437061"/>
-<entry endPc="268437848" name="rez_cmp_local_label_lDate_fontHeight" stackId="8" startPc="268437061"/>
-<entry endPc="268437848" name="rez_cmp_local_label_lBatt_font" stackId="9" startPc="268437061"/>
-<entry endPc="268437848" name="rez_cmp_local_custom_drawable_8Y50PHDFCMPRHU463SWQ" stackId="2" startPc="268437061"/>
+<entry endPc="268436266" name="coords" stackId="13" startPc="268436203"/>
+<entry endPc="268436279" name="i" stackId="12" startPc="268436203"/>
+<entry endPc="268436301" name="now" stackId="6" startPc="268435608"/>
+<entry endPc="268436301" name="info" stackId="2" startPc="268435608"/>
+<entry endPc="268436301" name="time" stackId="3" startPc="268435608"/>
+<entry endPc="268436301" name="vDate" stackId="11" startPc="268435608"/>
+<entry endPc="268436301" name="sMin" stackId="5" startPc="268435608"/>
+<entry endPc="268436301" name="sDate" stackId="10" startPc="268435608"/>
+<entry endPc="268436301" name="vMin" stackId="4" startPc="268435608"/>
+<entry endPc="268436301" name="sDay" stackId="9" startPc="268435608"/>
+<entry endPc="268436301" name="sDayOfWeek" stackId="8" startPc="268435608"/>
+<entry endPc="268436301" name="dateInfo" stackId="7" startPc="268435608"/>
+<entry endPc="268436465" name="coords" stackId="3" startPc="268436304"/>
+<entry endPc="268436559" name="coords" stackId="2" startPc="268436468"/>
+<entry endPc="268436735" name="dictionary" stackId="1" startPc="268436694"/>
+<entry endPc="268436895" name="pWidth" stackId="4" startPc="268436833"/>
+<entry endPc="268436895" name="pY" stackId="3" startPc="268436833"/>
+<entry endPc="268436895" name="pX" stackId="2" startPc="268436833"/>
+<entry endPc="268436895" name="pHeight" stackId="5" startPc="268436833"/>
+<entry endPc="268437805" name="rez_cmp_local_label_lDate_font" stackId="6" startPc="268437018"/>
+<entry endPc="268437805" name="rez_cmp_local_label_lBatt" stackId="10" startPc="268437018"/>
+<entry endPc="268437805" name="rez_cmp_local_label_lTime" stackId="4" startPc="268437018"/>
+<entry endPc="268437805" name="rez_cmp_local_label_lDate" stackId="7" startPc="268437018"/>
+<entry endPc="268437805" name="rez_cmp_local_label_lTime_fontHeight" stackId="5" startPc="268437018"/>
+<entry endPc="268437805" name="rez_cmp_local_label_lBatt_fontHeight" stackId="11" startPc="268437018"/>
+<entry endPc="268437805" name="rez_cmp_local_label_lTime_font" stackId="3" startPc="268437018"/>
+<entry endPc="268437805" name="rez_cmp_local_label_lDate_fontHeight" stackId="8" startPc="268437018"/>
+<entry endPc="268437805" name="rez_cmp_local_label_lBatt_font" stackId="9" startPc="268437018"/>
+<entry endPc="268437805" name="rez_cmp_local_custom_drawable_XWDG3OVU5PRHGT92FRSL" stackId="2" startPc="268437018"/>
 </localVars>
 <annotations/>
 <functions>

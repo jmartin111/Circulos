@@ -30,8 +30,8 @@ class CirculosView extends Ui.WatchFace {
 	
 	hidden var numToWord = [
 		[0, "o'clock"], 
-		[1, "oh one"], [2, "oh two"], [3, "oh three"], [4, "oh four"], [5, "oh five"], [6, "oh six"],
-		[7, "oh seven"], [8, "oh eight"], [9, "oh nine"], [10, "ten"], [11, "eleven"], [12, "twelve"],
+		[1, "oh\none"], [2, "oh\ntwo"], [3, "oh\nthree"], [4, "oh\nfour"], [5, "oh\nfive"], [6, "oh\nsix"],
+		[7, "oh\nseven"], [8, "oh\neight"], [9, "oh\nnine"], [10, "ten"], [11, "eleven"], [12, "twelve"],
 		[13, "thirteen"], [14, "fourteen"], [15, "fifteen"], [16, "sixteen"], [17, "seventeen"], [18, "eighteen"],
 		[19, "nineteen"], [20, "twenty"], [21, "twenty\none"], [22, "twenty\ntwo"], [23, "twenty\nthree"], [24, "twenty\nfour"],
 		[25, "twenty\nfive"], [26, "twenty\nsix"], [27, "twenty\nseven"], [28, "twenty\neight"], [29, "twenty\nnine"], [30, "thirty"],
@@ -91,14 +91,11 @@ class CirculosView extends Ui.WatchFace {
 		var vDate = View.findDrawableById("lDate");
 		vDate.setText(sDate);
 		vDate.setFont(rFontDate);
+		vDate.setColor(App.getApp().getProperty("HrDateColor"));
 		vDate.setLocation(xCenter, yCenter + 50);
                 
         //! Call the parent onUpdate function to redraw the layout
-        View.onUpdate(dc);        
-        
-        //! bezel circle; I could take it or leave it
-		dc.setColor(Gfx.COLOR_LT_GRAY, Gfx.COLOR_BLACK);
-		dc.drawCircle(xCenter, yCenter, width/2 - 2);
+        View.onUpdate(dc);          
 		
 		//! draw the layout hour circles
 		dc.setColor(App.getApp().getProperty("DialColor"), Gfx.COLOR_BLACK);
@@ -129,7 +126,7 @@ class CirculosView extends Ui.WatchFace {
 		
 		//! draw the time circle
 		var coords = calcCircleCoord(hourRads[hour][1]);
-		dc.setColor(App.getApp().getProperty("TimeColor"), Gfx.COLOR_BLACK);
+		dc.setColor(App.getApp().getProperty("HrDateColor"), Gfx.COLOR_BLACK);
 		dc.drawCircle(coords[0], coords[1], 16);				
     }
     
