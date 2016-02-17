@@ -17,6 +17,7 @@
     </setting>
     <setting propertyKey="@Properties.DialColor" title="@Strings.DialColorTitle">
         <settingConfig type="list">
+        	<listEntry value="0x000000">@Strings.ColorBlack</listEntry>
             <listEntry value="0x0000FF">@Strings.ColorBlue</listEntry>
         	<listEntry value="0x555555">@Strings.ColorDarkGray</listEntry>
             <listEntry value="0xAA0000">@Strings.ColorDarkRed</listEntry>
@@ -48,7 +49,7 @@
     <setting propertyKey="@Properties.BgColor" title="@Strings.BgColorTitle">
         <settingConfig type="list">
         	<listEntry value="0xAAAAAA">@Strings.ColorLightGray</listEntry>            
-            <listEntry value="0xFF5500">@Strings.ColorDarkGray</listEntry>  
+            <listEntry value="0x555555">@Strings.ColorDarkGray</listEntry>  
             <listEntry value="0xFF00FF">@Strings.ColorPink</listEntry>
             <listEntry value="0x000000">@Strings.ColorBlack</listEntry> 
             <listEntry value="0xFFFFFF">@Strings.ColorWhite</listEntry>

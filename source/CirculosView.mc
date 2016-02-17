@@ -30,8 +30,8 @@ class CirculosView extends Ui.WatchFace {
 	
 	hidden var numToWord = [
 		[0, "o'clock"], 
-		[1, "oh\none"], [2, "oh\ntwo"], [3, "oh\nthree"], [4, "oh\nfour"], [5, "oh\nfive"], [6, "oh\nsix"],
-		[7, "oh\nseven"], [8, "oh\neight"], [9, "oh\nnine"], [10, "ten"], [11, "eleven"], [12, "twelve"],
+		[1, "oh one"], [2, "oh two"], [3, "oh three"], [4, "oh four"], [5, "oh five"], [6, "oh six"],
+		[7, "oh seven"], [8, "oh eight"], [9, "oh nine"], [10, "ten"], [11, "eleven"], [12, "twelve"],
 		[13, "thirteen"], [14, "fourteen"], [15, "fifteen"], [16, "sixteen"], [17, "seventeen"], [18, "eighteen"],
 		[19, "nineteen"], [20, "twenty"], [21, "twenty\none"], [22, "twenty\ntwo"], [23, "twenty\nthree"], [24, "twenty\nfour"],
 		[25, "twenty\nfive"], [26, "twenty\nsix"], [27, "twenty\nseven"], [28, "twenty\neight"], [29, "twenty\nnine"], [30, "thirty"],
@@ -75,24 +75,31 @@ class CirculosView extends Ui.WatchFace {
         var vMin	= View.findDrawableById("lTime");
         var sMin	= numToWord[time.min][1];
         vMin.setFont(rFont);
+        
+        //! format for single vs. double line text
+        if (sMin.find("\n")) {
+        	vMin.setLocation(xCenter, yCenter - 42);
+        }else{
+        	vMin.setLocation(xCenter, yCenter - 22);
+        }
+        
         vMin.setText(sMin);
         vMin.setColor(App.getApp().getProperty("TimeColor"));
-        vMin.setLocation(xCenter, yCenter - 50);
         
         //! Get the date
         var now 		= Time.now();
 		var dateInfo 	= Date.info(now, Time.FORMAT_SHORT);		
-		var sDayOfWeek 	= dateInfo.day_of_week;
+		var sMonth	 	= dateInfo.month;
     	var sDay 		= dateInfo.day;
     	//var sYear		= dateInfo.year;
-    	var sDate 		= sDayOfWeek + "." + sDay;
+    	var sDate 		= sMonth + "." + sDay;
     	
     	//! draw the date
 		var vDate = View.findDrawableById("lDate");
 		vDate.setText(sDate);
 		vDate.setFont(rFontDate);
 		vDate.setColor(App.getApp().getProperty("HrDateColor"));
-		vDate.setLocation(xCenter, yCenter + 50);
+		vDate.setLocation(xCenter, yCenter + 45);
                 
         //! Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);          
