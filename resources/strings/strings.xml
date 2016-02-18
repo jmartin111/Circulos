@@ -3,7 +3,7 @@
     <string id="TimeColorTitle">Time Color</string>
     <string id="DialColorTitle">Dial Color</string>
     <string id="BgColorTitle">Background Color</string>
-    <string id="HrDateColorTitle">Hour And Date Color</string>
+    <string id="HrDateColorTitle">Date Color</string>
     
     <string id="ColorDarkGray">Dark Gray</string>
     <string id="ColorLightGray">Light Gray</string>

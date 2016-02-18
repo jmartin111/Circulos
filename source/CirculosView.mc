@@ -16,6 +16,7 @@ class CirculosView extends Ui.WatchFace {
 	hidden const PI 		= Math.PI;
 	hidden var rFont		= null;
 	hidden var rFontDate 	= null;
+	hidden var layout		= null;
 	
 	hidden var hourRads = [
 		//! make a zero-element pad to align the indicies
@@ -68,13 +69,29 @@ class CirculosView extends Ui.WatchFace {
         xCenter = width/2;
         yCenter = height/2;
     
-    	var info = Act.getActivityInfo();
+    	//! get battery info
+		var sysStats 		= Sys.getSystemStats();
+		var sBatteryLife 	= sysStats.battery.format("%.0f")+"%";
+		var vBatt = View.findDrawableById("lBatt");
+		vBatt.setColor(App.getApp().getProperty("DateColor"));
+		vBatt.setFont(rFontDate);
+		vBatt.setText(sBatteryLife);
     	
         //! Get the current time
         var time 	= Sys.getClockTime();
         var vMin	= View.findDrawableById("lTime");
         var sMin	= numToWord[time.min][1];
+        var hour	= time.hour;
         vMin.setFont(rFont);
+        
+        //! convert hour to 12-hr format
+		if (hour == 0) {
+			hour = 12;
+		}
+		
+		if (hour > 12) {
+			hour = hour - 12;
+		}
         
         //! format for single vs. double line text
         if (sMin.find("\n")) {
@@ -98,43 +115,42 @@ class CirculosView extends Ui.WatchFace {
 		var vDate = View.findDrawableById("lDate");
 		vDate.setText(sDate);
 		vDate.setFont(rFontDate);
-		vDate.setColor(App.getApp().getProperty("HrDateColor"));
-		vDate.setLocation(xCenter, yCenter + 45);
+		vDate.setColor(App.getApp().getProperty("DateColor"));
+		//vDate.setLocation(xCenter, yCenter + 45);
                 
         //! Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);          
 		
-		//! draw the layout hour circles
-		dc.setColor(App.getApp().getProperty("DialColor"), Gfx.COLOR_BLACK);
+		//! draw the hour circles
 		for (var i = 1; i < hourRads.size(); i++) {
 			var coords = calcCircleCoord(hourRads[i][1]);
-			dc.fillCircle(coords[0], coords[1], 7);
-		}
-		
-		drawHourCircle(dc, time.hour);	
+			if (i == hour) {
+				drawHourCircle(dc, hour);
+			}else{
+				dc.setColor(App.getApp().getProperty("DialColor"), Gfx.COLOR_BLACK);
+				dc.fillCircle(coords[0], coords[1], 8);
+			}
+		}			
     }
     
-    function drawHourCircle(dc, hour) {
-    	//! get the current hour value
-		if (hour == 0) {
-			hour = 12;
-		}
-		
-		if (hour > 12) {
-			hour = hour - 12;
-		}
-		
-		//! get battery info
-		/*var sysStats 		= Sys.getSystemStats();
-		var sBatteryLife 	= sysStats.battery.format("%.0f")+"%";
-		var vBatt = View.findDrawableById("lBatt");
-		vBatt.setText(sBatteryLife);
-		vBatt.setLocation(coords[0], coords[1]);*/
-		
+    //! HACK!
+    //! radius is the inner radius of the circle. uses drawEllipse() because it results in a more
+	//! rounded circle than drawCircle() for small circles.
+	function drawCircle(dc, x, y, radius, penWidth) {
+    	for (var i = 0; i < penWidth; ++i) {
+        	dc.drawEllipse(x, y, radius + i, radius + i);
+    	}
+	}
+    
+    function drawHourCircle(dc, hour) {		
 		//! draw the time circle
-		var coords = calcCircleCoord(hourRads[hour][1]);
-		dc.setColor(App.getApp().getProperty("HrDateColor"), Gfx.COLOR_BLACK);
-		dc.drawCircle(coords[0], coords[1], 16);				
+		Sys.println("HOUR " + hour);
+		for (var i = 0; i < 3; i++) {
+			var coords = calcCircleCoord(hourRads[hour][1]);
+			dc.setColor(App.getApp().getProperty("TimeColor"), Gfx.COLOR_BLACK);
+			//! HACK!
+			drawCircle(dc, coords[0], coords[1], 14, 2);
+		}				
     }
     
     //! calculate the hour/rads coordinates
