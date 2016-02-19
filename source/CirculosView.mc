@@ -17,6 +17,7 @@ class CirculosView extends Ui.WatchFace {
 	hidden var rFont		= null;
 	hidden var rFontDate 	= null;
 	hidden var layout		= null;
+	hidden var btImage		= null;
 	
 	hidden var hourRads = [
 		//! make a zero-element pad to align the indicies
@@ -33,7 +34,7 @@ class CirculosView extends Ui.WatchFace {
 		[0, "o'clock"], 
 		[1, "oh one"], [2, "oh two"], [3, "oh three"], [4, "oh four"], [5, "oh five"], [6, "oh six"],
 		[7, "oh seven"], [8, "oh eight"], [9, "oh nine"], [10, "ten"], [11, "eleven"], [12, "twelve"],
-		[13, "thirteen"], [14, "fourteen"], [15, "fifteen"], [16, "sixteen"], [17, "seventeen"], [18, "eighteen"],
+		[13, "thirteen"], [14, "fourteen"], [15, "fifteen"], [16, "sixteen"], [17, "seven\nteen"], [18, "eighteen"],
 		[19, "nineteen"], [20, "twenty"], [21, "twenty\none"], [22, "twenty\ntwo"], [23, "twenty\nthree"], [24, "twenty\nfour"],
 		[25, "twenty\nfive"], [26, "twenty\nsix"], [27, "twenty\nseven"], [28, "twenty\neight"], [29, "twenty\nnine"], [30, "thirty"],
 		[31, "thirty\none"], [32, "thirty\ntwo"], [33, "thirty\nthree"], [34, "thirty\nfour"], [35, "thirty\nfive"], [36, "thirty\nsix"],
@@ -52,6 +53,7 @@ class CirculosView extends Ui.WatchFace {
         setLayout(Rez.Layouts.WatchFace(dc));
         rFont = Ui.loadResource(Rez.Fonts.squared_circle);
         rFontDate = Ui.loadResource(Rez.Fonts.squared_circle_date);
+        btImage = Ui.loadResource(Rez.Drawables.BtIcon);
     }
 
     //! Called when this View is brought to the foreground. Restore
@@ -75,7 +77,7 @@ class CirculosView extends Ui.WatchFace {
 		var vBatt = View.findDrawableById("lBatt");
 		vBatt.setColor(App.getApp().getProperty("DateColor"));
 		vBatt.setFont(rFontDate);
-		vBatt.setText(sBatteryLife);
+		vBatt.setText(sBatteryLife);			
     	
         //! Get the current time
         var time 	= Sys.getClockTime();
@@ -121,14 +123,14 @@ class CirculosView extends Ui.WatchFace {
         //! Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);          
 		
-		//! draw the hour circles
+		//! draw the bezel markers and the current time marker
 		for (var i = 1; i < hourRads.size(); i++) {
-			var coords = calcCircleCoord(hourRads[i][1]);
+			var coords = calcCircleCoord(hourRads[i][1], 85);
 			if (i == hour) {
 				drawHourCircle(dc, hour);
 			}else{
 				dc.setColor(App.getApp().getProperty("DialColor"), Gfx.COLOR_BLACK);
-				dc.fillCircle(coords[0], coords[1], 8);
+				drawCircle(dc, coords[0], coords[1], 8, 2);
 			}
 		}			
     }
@@ -142,11 +144,10 @@ class CirculosView extends Ui.WatchFace {
     	}
 	}
     
-    function drawHourCircle(dc, hour) {		
-		//! draw the time circle
-		Sys.println("HOUR " + hour);
+    function drawHourCircle(dc, hour) {
+    	var coords = calcCircleCoord(hourRads[hour][1], 85);
+    			
 		for (var i = 0; i < 3; i++) {
-			var coords = calcCircleCoord(hourRads[hour][1]);
 			dc.setColor(App.getApp().getProperty("TimeColor"), Gfx.COLOR_BLACK);
 			//! HACK!
 			drawCircle(dc, coords[0], coords[1], 14, 2);
@@ -154,12 +155,12 @@ class CirculosView extends Ui.WatchFace {
     }
     
     //! calculate the hour/rads coordinates
-    function calcCircleCoord(rads) {
+    function calcCircleCoord(rads, radius) {
     	//! x = cx + r * cos(a)
 		//! y = cy + r * sin(a)
     	var coords = new[2];
-    	coords[0] = xCenter + 85 * Math.cos(rads);
-    	coords[1] = yCenter + 85 * Math.sin(rads);
+    	coords[0] = xCenter + radius * Math.cos(rads);
+    	coords[1] = yCenter + radius * Math.sin(rads);
     	return coords;    	
     }
     
