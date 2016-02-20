@@ -17,11 +17,10 @@ class CirculosView extends Ui.WatchFace {
 	hidden var rFont		= null;
 	hidden var rFontDate 	= null;
 	hidden var layout		= null;
-	hidden var btImage		= null;
 	
 	hidden var hourRads = [
 		//! make a zero-element pad to align the indicies
-		//! with a one-based clock numbering scheme
+		//! for a one-based clock numbering scheme
 		[0, 0],
 		//! the clock begins... 
 		[1, 5*PI/3],	[2, 11*PI/6], 	[3, 0],
@@ -53,7 +52,6 @@ class CirculosView extends Ui.WatchFace {
         setLayout(Rez.Layouts.WatchFace(dc));
         rFont = Ui.loadResource(Rez.Fonts.squared_circle);
         rFontDate = Ui.loadResource(Rez.Fonts.squared_circle_date);
-        btImage = Ui.loadResource(Rez.Drawables.BtIcon);
     }
 
     //! Called when this View is brought to the foreground. Restore
@@ -70,7 +68,7 @@ class CirculosView extends Ui.WatchFace {
         height 	= dc.getHeight();
         xCenter = width/2;
         yCenter = height/2;
-    
+           
     	//! get battery info
 		var sysStats 		= Sys.getSystemStats();
 		var sBatteryLife 	= sysStats.battery.format("%.0f")+"%";
@@ -123,6 +121,19 @@ class CirculosView extends Ui.WatchFace {
         //! Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);          
 		
+		//! bluetooth
+		var btCoords = calcCircleCoord(hourRads[hour][1], 85);
+		var btPts = [ [btCoords[0]-5, btCoords[1]+5], [btCoords[0]+5, btCoords[1]-5], 
+					  [btCoords[0], btCoords[1]-10],   [btCoords[0], btCoords[1]+10], 
+					  [btCoords[0]+5, btCoords[1]+5], [btCoords[0]-5, btCoords[1]-5] 
+					];
+					
+		if (Sys.getDeviceSettings().phoneConnected) {
+			dc.setColor(App.getApp().getProperty("DateColor"), 
+						App.getApp().getProperty("BgColor"));
+			dc.fillPolygon(btPts);
+	    }
+        				
 		//! draw the bezel markers and the current time marker
 		for (var i = 1; i < hourRads.size(); i++) {
 			var coords = calcCircleCoord(hourRads[i][1], 85);
@@ -135,7 +146,7 @@ class CirculosView extends Ui.WatchFace {
 		}			
     }
     
-    //! HACK!
+    //! HACK for setPenWidth() - draws a series of concentric rings
     //! radius is the inner radius of the circle. uses drawEllipse() because it results in a more
 	//! rounded circle than drawCircle() for small circles.
 	function drawCircle(dc, x, y, radius, penWidth) {
@@ -146,10 +157,11 @@ class CirculosView extends Ui.WatchFace {
     
     function drawHourCircle(dc, hour) {
     	var coords = calcCircleCoord(hourRads[hour][1], 85);
-    			
+    	
+    	//!	draw a series of concentric rings	
 		for (var i = 0; i < 3; i++) {
 			dc.setColor(App.getApp().getProperty("TimeColor"), Gfx.COLOR_BLACK);
-			//! HACK!
+			//! HACK START!
 			drawCircle(dc, coords[0], coords[1], 14, 2);
 		}				
     }

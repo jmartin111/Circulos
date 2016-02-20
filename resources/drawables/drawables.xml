@@ -1,19 +1,9 @@
 <drawables>
     <bitmap id="LauncherIcon" filename="launcher_icon.png" />
-    <bitmap id="BtIcon" x="113" y="26" filename="../images/bluetoothblack.png" dithering="none" >
+    <bitmap id="BtRound" filename="../images/btRound16.png" dithering="none" >
     	<palette disableTransparency="false">
-            <color>000000</color>
-            <color>0000FF</color>
-        	<color>555555</color>
-            <color>AA0000</color>
-			<color>00FF00</color>
-            <color>00AAFF</color>
-            <color>AAAAAA</color>
-            <color>FF5500</color>
-            <color>FF00FF</color>
-            <color>5500FF</color>
             <color>FFFFFF</color>
-            <color>FFAA00</color>
+            <color>0000FF</color>
         </palette>
-    </bitmap>
+    </bitmap> 
 </drawables>
